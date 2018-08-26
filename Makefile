@@ -1,6 +1,6 @@
 CC=gcc
 BIN=./bin
-CFLAGS=-Wall -Werror -g -lpthread
+CFLAGS=-Wall -g -lpthread
 
 PROG=ej1 ej2 ej3 forkthread sh
 
