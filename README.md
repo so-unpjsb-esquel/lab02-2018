@@ -17,7 +17,7 @@ $
 ```
 
 ## Ejercicio 2
-Completar el programa `ej2.c`, para que cree un hilo mediante la función `pthread_create()`, el cual imprime varias veces un mensaje por la salida estándar. El hilo inicial (osea, el que ejecuta la función `main`) debe esperar por la finalización del nuevo hilo, usando la función `pthread_join()`.
+Completar el programa `ej2.c`, para que cree un hilo mediante la función [`pthread_create()`](http://man7.org/linux/man-pages/man3/pthread_create.3.html), el cual imprime varias veces un mensaje por la salida estándar. El hilo inicial (osea, el que ejecuta la función `main`) debe esperar por la finalización del nuevo hilo, usando la función [`pthread_join()`](http://man7.org/linux/man-pages/man3/pthread_join.3.html).
 
 Responder:
 * ¿Qué sucede si se comenta la invocación a `pthread_join()`? Justificar.
@@ -51,7 +51,7 @@ $ cat < x.txt
 sistemas operativos
 $
 ```
-El parser implementado en el shell ya reconoce estos operadores, y genera una estructura `redircmd` con los datos necesarios para implementar la redirección. Deben completar el código necesario en la función `runcmd()`. Consultar las llamadas al sistema [`open()`](http://man7.org/linux/man-pages/man2/open.2.html) y [`close()`](http://man7.org/linux/man-pages/man2/close.2.html). Imprimir un mensaje de error si alguna de las llamadas al sistema empleadas falla con `perror()`. Verificar los permisos con los que se crea el archivo.
+El parser implementado en el shell ya reconoce estos operadores, y genera una estructura `redircmd` con los datos necesarios para implementar la redirección. Deben completar el código necesario en la función `runcmd()`. Consultar las llamadas al sistema [`open()`](http://man7.org/linux/man-pages/man2/open.2.html) y [`close()`](http://man7.org/linux/man-pages/man2/close.2.html). Imprimir un mensaje de error si alguna de las llamadas al sistema empleadas falla con [`perror()`](http://man7.org/linux/man-pages/man3/perror.3.html). Verificar los permisos con los que se crea el archivo.
 
 ### Tuberías (pipes)
 Implementar soporte de tuberías, de manera que se pueda ejecutar un comando como:
