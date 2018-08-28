@@ -30,7 +30,7 @@ Fin ej1
 $
 </code></pre>
 <h2 id="ejercicio-2">Ejercicio 2</h2>
-<p>Completar el programa <code>ej2.c</code>, para que cree un hilo mediante la función <code>pthread_create()</code>, el cual imprime varias veces un mensaje por la salida estándar. El hilo inicial (osea, el que ejecuta la función <code>main</code>) debe esperar por la finalización del nuevo hilo, usando la función <code>pthread_join()</code>.</p>
+<p>Completar el programa <code>ej2.c</code>, para que cree un hilo mediante la función <a href="http://man7.org/linux/man-pages/man3/pthread_create.3.html"><code>pthread_create()</code></a>, el cual imprime varias veces un mensaje por la salida estándar. El hilo inicial (osea, el que ejecuta la función <code>main</code>) debe esperar por la finalización del nuevo hilo, usando la función <a href="http://man7.org/linux/man-pages/man3/pthread_join.3.html"><code>pthread_join()</code></a>.</p>
 <p>Responder:</p>
 <ul>
 <li>¿Qué sucede si se comenta la invocación a <code>pthread_join()</code>? Justificar.</li>
@@ -61,7 +61,7 @@ $ cat &lt; x.txt
 sistemas operativos
 $
 </code></pre>
-<p>El parser implementado en el shell ya reconoce estos operadores, y genera una estructura <code>redircmd</code> con los datos necesarios para implementar la redirección. Deben completar el código necesario en la función <code>runcmd()</code>. Consultar las llamadas al sistema <a href="http://man7.org/linux/man-pages/man2/open.2.html"><code>open()</code></a> y <a href="http://man7.org/linux/man-pages/man2/close.2.html"><code>close()</code></a>. Imprimir un mensaje de error si alguna de las llamadas al sistema empleadas falla con <code>perror()</code>. Verificar los permisos con los que se crea el archivo.</p>
+<p>El parser implementado en el shell ya reconoce estos operadores, y genera una estructura <code>redircmd</code> con los datos necesarios para implementar la redirección. Deben completar el código necesario en la función <code>runcmd()</code>. Consultar las llamadas al sistema <a href="http://man7.org/linux/man-pages/man2/open.2.html"><code>open()</code></a> y <a href="http://man7.org/linux/man-pages/man2/close.2.html"><code>close()</code></a>. Imprimir un mensaje de error si alguna de las llamadas al sistema empleadas falla con <a href="http://man7.org/linux/man-pages/man3/perror.3.html"><code>perror()</code></a>. Verificar los permisos con los que se crea el archivo.</p>
 <h3 id="tuberías-pipes">Tuberías (pipes)</h3>
 <p>Implementar soporte de tuberías, de manera que se pueda ejecutar un comando como:</p>
 <pre><code>$ ls | wc
